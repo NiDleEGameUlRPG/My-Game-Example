@@ -1,0 +1,246 @@
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 530 (ID=0x1912)
+    Vendor:   Intel
+    VRAM:     2111 MB
+    Driver:   20.19.15.4463
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.072 seconds
+Platform assembly: D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Workspace\Unity\Touch Tile\FunTile_Data\Managed\System.dll (this message is harmless)
+desktop: 1280x1024 60Hz; virtual: 1280x1024 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 4.179946 ms
+20
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(659.0, 601.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(665.0, 600.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(674.0, 596.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(675.0, 579.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(695.0, 579.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(739.0, 569.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(717.0, 528.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(706.0, 519.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(647.0, 499.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(690.0, 407.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(758.0, 397.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(701.0, 370.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(524.0, 376.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(533.0, 332.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(559.0, 244.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(759.0, 244.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(719.0, 223.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(379.0, 274.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(462.0, 443.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(706.0, 525.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(814.0, 504.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(1279.0, 1022.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(1230.0, 953.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+(1111.0, 382.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at MapGenerator.clicked (Int32 i, Int32 j) [0x00000] in <filename unknown>:0 
+  at GameManager.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: c3c -> priority: 1 
