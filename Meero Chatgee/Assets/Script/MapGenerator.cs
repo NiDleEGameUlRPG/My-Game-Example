@@ -18,6 +18,8 @@ public class MapGenerator : MonoBehaviour {
 	private int[,] map;
     private Transform boardHolder;
 	private int start_x, start_y, finish_x, finish_y;
+	private Vector2[] room_location;
+	private Vector2[] room_size;
 
 	MapGenerator()	{
 		
@@ -29,7 +31,7 @@ public class MapGenerator : MonoBehaviour {
 		mapGenerate();
 		instantiateMap();
 	}
-
+	static void Main(){}
 	// Update is called once per frame
 	void Update () {
 
@@ -55,6 +57,7 @@ public class MapGenerator : MonoBehaviour {
 				}
 			}
 		}
+		setRoom();
 		
 		start_x = r.Next(1, map_width - 2);
 		start_y = r.Next(1, map_height - 2);
@@ -66,8 +69,8 @@ public class MapGenerator : MonoBehaviour {
 		
 		map[start_x,start_y] = START;
 
-		finish_x = r.Next(1, map_width - 2);
-		finish_y = r.Next(1, map_height - 2);
+		finish_x = r.Next(1, map_width - 1);
+		finish_y = r.Next(1, map_height - 1);
 
 		while(isWall(finish_x, finish_y) || (start_x == finish_x && start_y == finish_y))	{
 			finish_x = r.Next(1, map_width - 1);
@@ -76,15 +79,44 @@ public class MapGenerator : MonoBehaviour {
 		map[finish_x,finish_y] = FINISH;
 	}
 
-	Vector2[] makeRoom( )	{
+	void setRoom( )	{
 		// Make Room with (width, height)'s squre.
-		Vector2[] returnValue = new Vector2[room_number];
+		room_location = new Vector2[room_number];
+		room_size = new Vector2[room_number];
+		System.Random r = new System.Random();
+		int i, x, y, w, h;
 		
-		mapInitialize(WALL);
-		
-		
-		return returnValue;
+		for(i = 0; i < room_number; i++)	{
+			x = r.Next(1, map_width - 1);
+			y = r.Next(1, map_height - 1);
+			w = r.Next(1, map_width - x - 1);
+			while(w > max_room_width)	{
+				w = r.Next(1, map_width - x - 1);
+			}
+			h = r.Next(1, map_height - y - 1);
+			while(h > max_room_height)	{
+				h = r.Next(1, map_height - y - 1);
+			}
+			createRoom(x, y, w, h);
+			room_location[i] = new Vector2(x, y);
+			room_size[i] = new Vector2(w, h);
+		}
 	}
+	
+	void createRoom(int x, int y, int w, int h)	{
+		int i, j;
+		for(i = x; i < x + w; i++)	{
+			for(j = y; j < y + h; j++)	{
+				map[i,j] = ROAD;
+			}
+		}
+	}
+	void setRoad()	{
+		System.Random r = new System.Random();
+		// Link all room with road line.
+		r.Next(0,1);
+	}
+	
 
 	bool isWall(int i, int j)	{
 		bool returnValue = true;
@@ -121,7 +153,7 @@ public class MapGenerator : MonoBehaviour {
 					toInstantiate = person;
 				}
 				else if(map[i,j] == FINISH) {
-					toInstantiate = finsih;
+					toInstantiate = finish;
 				}
 				else if(map[i,j] == START)	{
 					toInstantiate = start;
@@ -135,8 +167,9 @@ public class MapGenerator : MonoBehaviour {
 		instance.transform.SetParent(boardHolder);
 	}
 	
-	bool mapCanFinsish()	{
+	bool mapCanFinsish(int x, int y, int w, int h)	{
 		bool returnValue = false;
+		// If map[x,y] ~ map[x + w, x + h] can finish 
 		
 		
 		return returnValue;

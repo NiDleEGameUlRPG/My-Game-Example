@@ -356,18 +356,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Script
+    - Assets/Prefap
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script
+  - Assets/Prefap
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /home/sshrik/Workspace/Unity/My-Game-Example/Meero Chatgee
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 08250000
-    m_LastClickedID: 9480
+    m_SelectedIDs: 0a250000
+    m_LastClickedID: 9482
     m_ExpandedIDs: 00000000a824000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -512,8 +512,8 @@ MonoBehaviour:
     height: 587
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5e250000
-    m_LastClickedID: 9566
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: d2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -564,14 +564,14 @@ MonoBehaviour:
     width: 1109
     height: 587
   m_SceneLighting: 1
-  lastFramingTime: 1960.4477059841156
+  lastFramingTime: 148.4919638633728
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 68.71616, y: 82.1624, z: 0}
+    m_Target: {x: 86.606255, y: 97.70854, z: 0}
     speed: 2
-    m_Value: {x: 68.71616, y: 82.1624, z: 0}
+    m_Value: {x: 86.606255, y: 97.70854, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -598,9 +598,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 163.10472
+    m_Target: 147.68275
     speed: 2
-    m_Value: 163.10472
+    m_Value: 147.68275
   m_Ortho:
     m_Target: 1
     speed: 2
