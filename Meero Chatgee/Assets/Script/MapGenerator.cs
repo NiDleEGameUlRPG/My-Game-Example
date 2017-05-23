@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MapGenerator : MonoBehaviour {
 	public int map_width, map_height, wall_percent;
-	public int room_number, max_room_width, max_room_height;
+	public int room_number, max_room_width, max_room_height, far;
 	
 	public GameObject wall, road, finish, start, person;
 
@@ -67,8 +67,7 @@ public class MapGenerator : MonoBehaviour {
 			start_y = r.Next(1, map_height - 2);
 		}
 		
-		map[start_x,start_y] = START;
-
+		
 		finish_x = r.Next(1, map_width - 1);
 		finish_y = r.Next(1, map_height - 1);
 
@@ -76,7 +75,28 @@ public class MapGenerator : MonoBehaviour {
 			finish_x = r.Next(1, map_width - 1);
 			finish_y = r.Next(1, map_height - 1);
 		}
+		while( (start_x - finish_x) * (start_x - finish_x) + (start_y - finish_y) * (start_y - finish_y) < far * far) {
+			start_x = r.Next(1, map_width - 2);
+			start_y = r.Next(1, map_height - 2);
+	
+			while(isWall(start_x, start_y))	{
+				start_x = r.Next(1, map_width - 2);
+				start_y = r.Next(1, map_height - 2);
+			}
+			
+			
+			finish_x = r.Next(1, map_width - 1);
+			finish_y = r.Next(1, map_height - 1);
+	
+			while(isWall(finish_x, finish_y) || (start_x == finish_x && start_y == finish_y))	{
+				finish_x = r.Next(1, map_width - 1);
+				finish_y = r.Next(1, map_height - 1);
+			}	
+		}
+		
 		map[finish_x,finish_y] = FINISH;
+		map[start_x,start_y] = START;
+		
 	}
 	void mapGenerate()	{
 		createMap();
