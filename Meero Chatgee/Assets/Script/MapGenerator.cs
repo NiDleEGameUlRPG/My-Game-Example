@@ -36,10 +36,10 @@ public class MapGenerator : MonoBehaviour {
 	void Update () {
 
 	}
-
-	void mapGenerate()	{
+	void createMap()	{
 		int i, j;
 		System.Random r = new System.Random();
+		
 		for(i = 0; i < map_width; i++)	{
 			for(j = 0; j < map_height; j++)	{
 				if((i == 0 || i == map_width - 1) || (j == 0 || j == map_height - 1))	{
@@ -77,6 +77,14 @@ public class MapGenerator : MonoBehaviour {
 			finish_y = r.Next(1, map_height - 1);
 		}
 		map[finish_x,finish_y] = FINISH;
+	}
+	void mapGenerate()	{
+		createMap();
+		while( mapCanFinish(0, 0, map_width, map_height, start_x, start_y, finish_x, finish_y) == false )	{
+			mapInitialize(EMPTY);
+			createMap();
+		}
+		Debug.Log( mapCanFinish(0, 0, map_width, map_height, start_x, start_y, finish_x, finish_y) );
 	}
 
 	void setRoom( )	{
@@ -167,11 +175,90 @@ public class MapGenerator : MonoBehaviour {
 		instance.transform.SetParent(boardHolder);
 	}
 	
-	bool mapCanFinsish(int x, int y, int w, int h)	{
+	bool mapCanFinish(int x, int y, int w, int h)	{
 		bool returnValue = false;
 		// If map[x,y] ~ map[x + w, x + h] can finish 
 		
 		
+		return returnValue;
+	}
+	
+	bool mapCanFinish(int x, int y, int w, int h, int st_x, int st_y, int fin_x, int fin_y)	{
+		bool returnValue = false;
+		
+		int[,] temp_map = new int[w,h];
+		
+		for(int i = x; i < x + w; i++)	{
+			for(int j = y; j < y + h; j++)	{
+				temp_map[i - x,j - y] = map[i,j];
+			}
+		}
+		
+		for(int k = 0; k < w * h; k++)	{
+			for(int i = 0; i < w; i++)	{
+				for(int j = 0; j < h; j++)	{
+					if(k == 0)	{
+						if(temp_map[i,j] == START)	{
+							if(temp_map[i + 1, j] == ROAD)	{
+								temp_map[i + 1, j] = k + 1;
+							}
+							if(temp_map[i - 1, j] == ROAD)	{
+								temp_map[i - 1, j] = k + 1;
+							}
+							if(temp_map[i, j + 1] == ROAD)	{
+								temp_map[i, j + 1] = k + 1;
+							}
+							if(temp_map[i, j - 1] == ROAD)	{
+								temp_map[i, j - 1] = k + 1;
+							}
+							if(aroundFinish(temp_map, i, j))	{
+								returnValue = true;
+								break;
+							}
+						}
+					}
+					else {
+						if(temp_map[i,j] == k)	{
+							if(temp_map[i + 1, j] == ROAD)	{
+								temp_map[i + 1, j] = k + 1;
+							}
+							if(temp_map[i - 1, j] == ROAD)	{
+								temp_map[i - 1, j] = k + 1;
+							}
+							if(temp_map[i, j + 1] == ROAD)	{
+								temp_map[i, j + 1] = k + 1;
+							}
+							if(temp_map[i, j - 1] == ROAD)	{
+								temp_map[i, j - 1] = k + 1;
+							}
+							if(aroundFinish(temp_map, i, j))	{
+								returnValue = true;
+								break;
+							}
+						}
+					}
+				}
+				if(returnValue)break;
+			}
+			if(returnValue) break;
+		}
+		return returnValue;
+	}
+	
+	bool aroundFinish(int[,] temp_map, int i, int j)	{
+		bool returnValue = false;
+		if(temp_map[i + 1, j] == FINISH)	{
+			returnValue = true;
+		}
+		else if(temp_map[i - 1, j] == FINISH)	{
+			returnValue = true;
+		}
+		else if(temp_map[i, j + 1] == FINISH)	{
+			returnValue = true;
+		}
+		else if(temp_map[i, j - 1] == FINISH)	{
+			returnValue = true;
+		}
 		return returnValue;
 	}
 }
